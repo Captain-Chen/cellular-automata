@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+	<title>Elementary Cellular Automata</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<canvas id="canvas"></canvas>
+	<div class="heading">Controls</div>
+	<section>
+		<label for "ruleset">Ruleset:</label>
+		<input type="text" id="ruleset" name="ruleset" value=110>
+		<button id="run">Run</button>
+		<p>Ruleset values should be a non-negative integer</p>
+	</section>
+	<div class="heading">Running Information</div>
+	<section>
+		<label for="iteration">Iteration:</label>
+		<span id="iteration">n/a</span>
+		<ul>
+			<li>Using ruleset: <span id="rulenumber">n/a</span>
+			</li>
+			<li>The board's dimensions are <span id="width"></span> by <span id="height"></span> tiles.</li>
+		</ul>
+	</section>
+</body>
+<script type="text/javascript" src="elementary-ca.js"></script>
+</html>
